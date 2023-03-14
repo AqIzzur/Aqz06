@@ -1,0 +1,480 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+body{
+    background-image: linear-gradient(to right, #b7ff00, #968787);
+}
+
+.bg-image{
+    animation-name: anm1;
+}
+.navigasi{
+    font-family: 'Roboto', sans-serif;
+    margin-top:20px ;
+    border-radius: 6px;
+}
+.active{
+    color: #f2ad00 !important;
+    font-weight: 700 !important;
+}
+.active:hover{
+    color: #ffcd4e !important;
+}
+
+.nav-link::after{
+    border: #f2ad00;
+display: block;
+    background-color: #4de3e1;
+    z-index: 100;
+}
+
+.navbar-brand:hover, .text1:hover{
+    color: #f8ca55 !important;
+}
+.box {
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+}
+
+.box:nth-child(odd) {
+    animation-delay: 0.2s;
+}
+
+.box:nth-child(even) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 50%, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+/* Section Home */
+/* Pertama */
+.hero{
+    content: "";
+    background-image: linear-gradient(to right, rgb(234, 82, 176), rgb(112, 245, 255), rgb(7, 255, 11),rgb(234, 82, 176));
+    min-height: 83vh;
+    z-index: 5;
+}
+.hero::after{
+    content: "";
+    background-image: linear-gradient(to top,  rgba(129, 236, 233, 0.654), rgba(134, 255, 251, 0.654), transparent);
+    height: 120px;
+    z-index: 10;
+    display: block;
+
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-top: 40px;
+
+}
+.text{
+    font-weight: 700 !important;
+    color: black;
+}
+
+
+/* Kedua */
+.kedua{
+    
+    background-color: rgba(129, 236, 233, 0.654);
+    height: fit-content;
+}
+
+.bg-1{
+    background-color: rgba(246, 226, 226, 0.654);
+    padding: 10px !important;
+    border-radius: 5px;
+    transition: all 1s ease-in-out !important;
+    margin: 10px !important;
+}
+
+.card-bg:hover .bg-1{
+    background-color: rgba(157, 255, 211, 0.654);
+}
+/* card */
+.card-bg{
+    background-color: rgba(238, 227, 227, 0.809) !important;
+    border-color: none !important;
+    transition: all 1s ease-in-out !important;
+}
+.card-bg:hover{
+    background-image: linear-gradient(to top, #2f50e3bf, #BDFEFF, transparent);
+    transition: all 0.5s ease-out;
+    box-shadow: 0 0 15px #0000009d;
+}
+.tombol{
+    background-color: rgb(60, 219, 83) !important;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+.tombol:hover{
+    background-color: rgb(70, 255, 98) !important;
+    color: #fff !important;
+    box-shadow: 5px 0 15px rgb(139, 252, 156) !important;;
+
+}
+.bg-card{
+    background-color: rgba(232, 230, 230, 0.732) !important;
+}
+
+.card1{
+    margin-left: -75px;
+}
+
+.logo-card{
+    transition: all 0.5s ease;
+}
+/* Footer */
+
+.footer{
+  
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* Section Profile */
+/* One */
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    display: flex;
+    background-color: transparent;
+
+}
+.card:hover{
+    width: 600px;
+    transition-delay: 0s;
+    align-items: center;
+}
+.card .circle{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.card .circle::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:var(--clr);
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+
+}
+.card:hover .circle::before{
+    clip-path: circle(400px at center);
+}
+
+/* Logo */
+.card .circle .logo{
+    position: relative;
+    width: 200px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.card:hover .circle .logo{
+    transform: scale(0);
+    transition-delay: 0s;
+}
+
+.content{
+    position: relative;
+    width: 50%;
+    left:10px;
+    padding: 20px  20px  20px 40px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.card:hover .content{
+    left: 0;
+    opacity: 1;
+    transition-delay: 0.5s;
+    visibility: visible;
+}
+
+.content h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    line-height: 1em;
+}
+.content p{
+    color: #fff;
+}
+.content a{
+    position: relative;
+    color: #111;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.card .logo-img{
+    position: absolute;
+    top: -35%;
+    left: 50%;
+    transform: translate(-50%, 50%) scale(0);
+    height: 300px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.card:hover .logo-img{
+    left: 72%;
+    transform: translate(-50%, 50%) scale(1);
+    transition-delay: 0.5s;
+}
+
+
+
+#one{
+    background-color: #BDFEFF;
+    height: 500px;
+
+}
+.Img{
+    background-color: #58fffca3;
+    border-radius: 20%;
+    align-items: center;
+    box-shadow: 2px 0 15px rgba(33, 38, 36, 0.25) !important;
+    transition: all ease-in 2s;
+}
+.Img:hover{
+    background-color: #37f4f1;
+    border-radius: 20%;
+    box-shadow: 2px 0 15px rgb(44, 50, 47)  !important;
+    transform: rotate(360deg) scale(1.1);
+    transition: all ease-out 2s;
+}
+.Img-hero{
+  margin: 20px;
+  transition: all  0.5s ease-in-out;
+}
+.img-Hero:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-out ;
+}
+
+.deskripsi{
+    background-color: #4bec566e;
+    border-radius: 20px;
+    box-shadow: 2px 0 15px rgba(33, 38, 34, 0.25) !important;
+    line-height: 32px;
+}
+.deskripsi:hover, .text2:hover{
+    transform: scale(1.02);
+}
+.deskripsi:hover{
+    background-color: #4bec56;
+    box-shadow: 2px 0 15px rgb(33, 38, 34) !important;
+}
+.deskripsi h3{
+    margin: 20px 40px;
+    font-weight: bold;
+}
+.deskripsi h3:hover{
+    color: #f8ca55;
+    transition: all 0,2s;
+}
+.deskripsi p{
+    margin: 20px 30px !important;
+    font-size: 17px;
+}
+.deskripsi p:hover{
+    color: #3850b1;
+}
+
+/* Two */
+#two{
+    background-image: linear-gradient(to bottom,  #BDFEFF,  #62fd79);
+}
+.text2{
+    color: #475eb9;
+}
+.text2:hover{
+    color: #ffd902;
+    text-shadow:2px 2px 15px #97a800;
+}
+.Img1{
+    z-index: 100 !important;
+    position: absolute;
+    display: block;
+}
+.img1:hover{
+    transform: scale(1.03);
+
+}
+
+
+/* Three */
+
+#three{
+    background-image: linear-gradient(to bottom, #62fd79, #e0e637);
+}
+.img-2{
+    border-radius: 20px !important; 
+    border: 5px solid #ffffff !important;
+    width: 800px !important;
+    height:550px !important; 
+}
+
+.text-alamat{
+    color: #180085;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+.text-alamat span{
+    color: #ff0000;
+}
+.alamat{
+    background-color: #45bd57;
+    width: 550px;
+    height: 50px;
+    border-radius: 10px;
+}
+.arrow{
+    position: absolute;
+    right: 420px;
+    top: 1310px;
+}
+.alamat:hover{
+    box-shadow: 5px 5px 15px #1200639a;
+}
+
+.maps:hover{
+    box-shadow: 0px 0 15px #2103a7b5;
+    transform: scale(1.02);
+}
+
+
+/* Section Prosedur */
+/* satu */
+#satu{
+    background-image: linear-gradient(to bottom, #acff31, #00ffc8);
+
+}
+.text-p{
+    background-image:linear-gradient(to right, #0dc300, #59fe80);
+    border-radius: 10px;
+}
+.text-p:hover{
+    box-shadow: 5px 0 20px #0000008c ;
+}
+.text-p h4{
+    margin-top: 10px;
+}
+.text-p p{
+    font-size: 17px;
+    font-weight: 600;
+}
+.prosedur-img{
+
+    transition: all 0.6s ease-in;
+}
+.prosedur-img:hover{
+    transform: scale(1.03);
+    transition: all 0.6s ease-out;
+}
+.foto1{
+    position: absolute;
+    display: block;
+
+}
+.foto2{
+    position: absolute;
+    display: block;
+
+}
+
+#dua{
+    background-image: linear-gradient(to bottom, #00ffc8, #5ae11b);
+}
+#tiga{
+    background-image: linear-gradient(to bottom, #5ae11b, #00ffc8);
+}
+#empat{
+    background-image: linear-gradient(to bottom, #00ffc8, #5ae11b);
+}
+
+/* section Empat */
+/* aaa */
+
+#aaa{
+    background-image: linear-gradient(to bottom, #b59700, #ffbd42, #f0ff49);
+}
+
+.sv1{
+    transform: rotate(5deg);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    transition: all 0.5s ease-in;
+    margin-left: 60px;
+}
+.sv1:hover{
+    transform: rotate(0deg);
+    box-shadow: 5px 2px 15px #22222298;
+    border: 5px solid #fff;
+    transition: all 0.5s ease-out;
+}
+.sv2{
+    transform: rotate(-5deg);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    transition: all 0.5s ease-in;
+    margin-left: 6
+}
+.sv2:hover{
+    transform: rotate(0deg);
+    box-shadow: 5px 2px 15px #22222298;
+    border: 5px solid #fff;
+    transition: all 0.5s ease-out;
+}
+.size-card{
+    margin: 70px 48px;
+}
+.bg-kartu{
+    width: 500px !important;
+}
+.bg-kartu:hover{
+    background-color: #ffa600 !important;
+    color: #fff !important;
+    box-shadow: 5px 0 15px #65330089;
+    border: 3px solid #fff;
+}
+

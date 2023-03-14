@@ -1,0 +1,31 @@
+
+@media screen  and (max-width : 1200px) {
+
+
+    
+}
+
+@media screen and (max-width : 768px) {
+    .offcanvas-end{
+        width: 100px;
+        
+    }
+    .font1{
+        font-size: 50px !important;
+    }
+    .persegi1 .persegi2, .persegi3{
+        width: 50px !important;
+    }
+
+}
+
+@media screen and (max-width : 576px) {
+
+
+
+}
+
+@media screen and ( max-width : 350px) {
+
+
+}
